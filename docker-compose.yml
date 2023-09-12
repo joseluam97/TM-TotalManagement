@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  psql:
+    container_name: db
+    image: "postgres:14.1-alpine"
+    environment:
+      - POSTGRES_ROOT_PASSWORD_FILE=/run/secrets/db_root_password
+      - POSTGRES_DB=TM
+      - POSTGRES_USER=homestead
+      - POSTGRES_PASSWORD_FILE=/run/secrets/db_password
+    ports:
+      - 5433:5432
+    volumes:
+      - psql_data:/var/lib/postgresql/data/
+    secrets:
+      - db_root_password
+      - db_password
+
+  django:
+    container_name: api
+    build:
+      context: ./api
+    ports:
+      - 8000:8000
+      - 3001:3001
+    volumes:
+      - ./api:/api
+    env_file:
+      - ./api/.env
+    depends_on:
+      - psql
+
+  react:
+    container_name: app
+    build:
+      context: ./app
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+
+secrets:
+  db_root_password:
+    file: ./docker/db_root_password.txt
+  db_password:
+    file: ./docker/db_password.txt
+
+volumes:
+  psql_data:
+
+networks:
+  default:

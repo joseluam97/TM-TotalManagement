@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@date-io/dayjs": "^2.16.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@mui/x-date-pickers": "^6.5.0",
+    "chart.js": "^4.3.0",
+    "react-chartjs-2": "^5.2.0",
+    "styled-components": "^5.3.10",
+    "tabulator-tables": "^5.5.0"
+  }
+}

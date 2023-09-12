@@ -1,0 +1,8 @@
+rolN1 = "General Manager"
+rolN2 = "Department Manager"
+rolN3 = "Department Leader"
+rolN4 = "Site Manager"
+rolN5 = "Site Coordinator"
+rolN6 = "Team Coordinator"
+rolN7 = "Team Leader"
+rolN8 = "Technician"

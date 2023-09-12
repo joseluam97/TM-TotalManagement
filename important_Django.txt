@@ -1,0 +1,5 @@
+1. Remove folder migrations
+2. pipenv run python manage.py makemigrations tm
+3. pipenv run python manage.py migrate tm
+4. pipenv run python manage.py migrate
+5. pipenv run python manage.py loaddata ./tm/seeds/31-05-22_create_user.json

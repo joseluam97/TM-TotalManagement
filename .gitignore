@@ -1,0 +1,22 @@
+# GITIGNORE
+#   Eliminamos todos los archivos que no queremos subir a GitLab y pertenecen a cada entorno
+
+# Jenkins
+/remoting
+/workspace
+remoting.jar
+
+# API
+/api/.env
+/api/tm/migrations
+/api/Pipfile.lock
+
+# APP
+/app/.env
+/app/package-lock.json
+/app/package.json
+/app/yarn.lock
+
+
+# node_modules
+/node_modules

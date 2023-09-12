@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==4.0.1"
+djangorestframework = "==3.13.1"
+django-cors-headers = "==3.11.0"
+psycopg2-binary = "==2.9.3"
+msal = "*"
+debugpy = "*"
+numpy = "*"
+pandas = "*"
+pyodbc = "*"
+sqlalchemy = "==1.4.22"
+lxml = "*"
+secure-smtplib = "*"
+django-rest-swagger = "*"
+django-excel = "*"
+openpyxl = "*"
+django-admin-honeypot = "*"
+sudo = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

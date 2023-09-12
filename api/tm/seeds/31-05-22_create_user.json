@@ -1,0 +1,19 @@
+[
+    {
+        "model": "tm.customUser",
+        "pk": 1,
+        "fields": {
+          "password": "pbkdf2_sha256$320000$miFmPAUPGHpHd78VUN89tv$rNIAisRK7LWPrYwh42XawLIiZ/mNJVxGftPx+m/mCA8=",
+          "is_superuser": true,
+          "first_name": "Jose Luis",
+          "last_name": "Astorga Morillo",
+          "is_staff": true,
+          "is_active": true,
+          "phone": "-",
+          "organization": "Airtificial",
+          "email": "joseluastorga97@gmail.com",
+          "rolUser": "Department Manager",
+          "IDidentification": "8261"
+        }
+    }
+]
